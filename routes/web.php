@@ -13,4 +13,6 @@
 
 
 Route::get('/', 'PostController@index');
+Route::get('/posts/create', 'PostController@create');
 Route::get('/posts/{post}', 'PostController@show');//特定の記事を出すときはshow
+Route::post('/posts','PostController@store');

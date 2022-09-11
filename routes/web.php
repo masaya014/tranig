@@ -13,3 +13,4 @@
 
 
 Route::get('/', 'PostController@index');
+Route::get('/posts/{post}', 'PostController@show');//特定の記事を出すときはshow
